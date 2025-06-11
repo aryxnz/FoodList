@@ -1,66 +1,75 @@
-.container {
-  max-width: 400px;
-  margin: auto;
-  font-family: sans-serif;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-h2 {
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://img.freepik.com/free-photo/standing-book-corner_23-2147978145.jpg?semt=ais_hybrid&w=740');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 10vh;
+}
+
+
+.app {
   text-align: center;
 }
 
-ul {
-  padding-left: 20px;
-}
-
-.food-btn {
-  background-color: #f0f0f0;
-  border: none;
-  padding: 8px 12px;
-  margin: 5px 0;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.food-btn:hover {
-  background-color: #ddd;
-}
-
-.input-section {
-  margin-top: 20px;
+.navbar {
   display: flex;
-  gap: 10px;
-}
-
-input[type="text"] {
-  flex: 1;
-  padding: 8px;
-  font-size: 16px;
-}
-
-button {
-  padding: 8px 12px;
-  background-color: #4caf50;
+  justify-content: space-between;
+  background: #343a40;
+  padding: 10px 30px;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  align-items: center;
 }
 
-button:hover {
-  background-color: #3e8e41;
+.logo {
+  font-size: 24px;
 }
 
-.result {
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  padding: 40px;
+  height: 100%;
+}
+
+.dropdowns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin-top: 20px;
 }
-.delete-btn {
-  background-color: #e53935;
+
+.dropdown label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.delete-btn:hover {
-  background-color: #c62828;
+.dropdown select {
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.8;
 }
